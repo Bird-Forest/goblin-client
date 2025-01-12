@@ -1,0 +1,11 @@
+@use "../../scss/variables" as v;
+@use "../../scss/functions" as fn;
+@use "../../scss/mixins" as mx;
+@use "../../scss/placeholders";
+
+.wrapper {
+  display: grid;
+  grid-template-columns: minmax(300px, 700px);
+  grid-auto-rows: 300px;
+  border: 2px solid #6a4c93;
+}

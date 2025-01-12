@@ -1,0 +1,21 @@
+@use "./placeholders";
+@use "./variables" as v;
+@use "./functions" as fn;
+
+body {
+  @extend %main-text;
+
+  font-family: v.$main-font, sans-serif;
+  color: fn.get-color("dark-tertiary");
+  // background-color: fn.get-color("dark-primary");
+}
+
+button {
+  font-family: inherit;
+  color: fn.get-color("current");
+  cursor: pointer;
+}
+
+summary {
+  list-style-type: none;
+}

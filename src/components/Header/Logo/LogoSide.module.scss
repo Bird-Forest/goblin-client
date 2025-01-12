@@ -1,0 +1,82 @@
+// @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Bubbles&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&family=Oi&family=Pacifico&family=Rubik+Bubbles&family=Rubik+Scribble&display=swap");
+
+// @use "../../../scss/variables" as v;
+// @use "../../../scss/functions" as fn;
+// @use "../../../scss/placeholders";
+
+.logo {
+  display: inline-flex;
+  gap: 40px;
+
+  // @extend %accent-text;
+  // color: fn.get-color("accent-tertiary");
+
+  // span {
+  //   color: inherit;
+  // }
+}
+
+.rubikBubblesRegular {
+  font-family: "Rubik Bubbles", serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+  font-style: normal;
+  color: #8ac926;
+}
+
+.pacificoRegular {
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+  color: #82c43c;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+
+.kablammoDom {
+  font-family: "Kablammo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 60;
+  font-size: 32px;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+  color: #82c43c;
+}
+
+// .rubikScribbleRegular {
+//   font-family: "Rubik Scribble", serif;
+//   font-weight: 400;
+//   font-style: normal;
+//   font-size: 32px;
+//   line-height: 1.8;
+//   letter-spacing: 0.08em;
+//   background-color: #82c43c;
+//   color: #82c43c;
+// }
+
+.oiRegular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 1.8;
+  letter-spacing: 0.08em;
+  color: #82c43c;
+}
+
+// <link rel="preconnect" href="https://fonts.googleapis.com">
+// <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+// <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+
+// <style>
+// @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Bubbles&display=swap');
+// </style>

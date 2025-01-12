@@ -1,0 +1,21 @@
+@use "../../../scss/variables" as v;
+@use "../../../scss/functions" as fn;
+@use "../../../scss/placeholders";
+
+// @debug $colors
+
+.nav {
+  @extend %details;
+  color: fn.get-color("light-primary");
+  // font-family: $main-font;
+  // font-size: $font-sizes.lg;
+  &.active {
+    color: fn.get-color("dark-tertiary");
+    font-size: fn.get-font-size("xl");
+    font-weight: fn.get-font-weight("Regular");
+
+    transition-property: font-size, font-weight, color;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+  }
+}

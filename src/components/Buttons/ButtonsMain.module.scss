@@ -1,0 +1,44 @@
+@use "../../scss/variables" as v;
+@use "../../scss/functions" as fn;
+@use "../../scss/mixins" as mx;
+@use "../../scss/placeholders";
+
+.wrapBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  @include mx.mq("md") {
+    flex-direction: row;
+  }
+}
+
+.btnMain {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+  }
+  span {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: fn.get-color("light-primary");
+
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.025em;
+    text-align: center;
+  }
+}

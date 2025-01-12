@@ -1,0 +1,12 @@
+@use "../../../scss/variables" as v;
+@use "../../../scss/functions" as fn;
+@use "../../../scss/placeholders";
+
+.navWrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background-color: fn.get-color("info");
+  box-shadow: 0px 1px 0px 0px #292932 inset;
+}
