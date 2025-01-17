@@ -1,7 +1,7 @@
-@use "../../scss/variables" as v;
-@use "../../scss/functions" as fn;
-@use "../../scss/mixins" as mx;
-@use "../../scss/placeholders";
+@use "../../../scss/variables" as v;
+@use "../../../scss/functions" as fn;
+@use "../../../scss/mixins" as mx;
+@use "../../../scss/placeholders";
 
 .wrappCard {
   @include mx.column-fs-fs(0px);
@@ -51,7 +51,7 @@
 .wrappText {
   @extend %main-text;
   color: v.$text;
-  text-align: justify;
+  // text-align: justify;
   margin-bottom: 20px;
 }
 // SocialNetworks

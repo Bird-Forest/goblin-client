@@ -1,5 +1,5 @@
 import React from "react";
-import cl from "./Offer.module.scss";
+import cl from "./Item.module.scss";
 import { FaSquareInstagram, FaSquareFacebook, FaGlobe } from "react-icons/fa6";
 
 export default function SocialNetworks({ item }) {

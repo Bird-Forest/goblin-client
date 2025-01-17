@@ -1,13 +1,19 @@
-import EmptyPage from "../components/Helper/EmptyPage";
-import Offer from "../components/Offers/Offer";
 import cl from "./page.module.scss";
 import offers from "../offers.json";
+import OffersByCategory from "../components/Offers/List/OffersByCategory";
 
 export default function ServicePerson() {
   const data = offers;
   // console.log(data);
   return (
-    <div className={cl.servicePage}>
+    <div>
+      <OffersByCategory data={data} />
+    </div>
+  );
+}
+
+{
+  /* <div className={cl.servicePage}>
       <ul className={cl.listOffers}>
         {data.map((item, i) => (
           <li key={i}>
@@ -15,6 +21,5 @@ export default function ServicePerson() {
           </li>
         ))}
       </ul>
-    </div>
-  );
+</div> */
 }

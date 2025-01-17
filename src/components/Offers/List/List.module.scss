@@ -1,0 +1,33 @@
+@use "../../../scss/variables" as v;
+@use "../../../scss/functions" as fn;
+@use "../../../scss/mixins" as mx;
+@use "../../../scss/placeholders";
+
+.servicePage {
+  @include mx.column-fs-cr(20px);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  @include mx.mq("lg") {
+    width: calc(100% - 340px - 80px);
+    padding: 20px 10px;
+  }
+  @include mx.mq("xl") {
+    width: calc(100% - 340px - 120px);
+  }
+  @include mx.mq("xxl") {
+    width: calc(100% - 340px - 160px);
+  }
+
+  .listOffers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    li {
+      display: flex;
+    }
+  }
+}

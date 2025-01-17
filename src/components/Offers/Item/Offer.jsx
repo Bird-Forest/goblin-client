@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import cl from "./Offer.module.scss";
+import cl from "./Item.module.scss";
 import { FaStar, FaRegStar } from "react-icons/fa";
 import SocialNetworks from "./SocialNetworks";
 

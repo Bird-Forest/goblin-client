@@ -1,4 +1,4 @@
-import Offer from "../components/Offers/Offer";
+import Offer from "../components/Offers/Item/Offer";
 import cl from "./page.module.scss";
 import offers from "../offers.json";
 
