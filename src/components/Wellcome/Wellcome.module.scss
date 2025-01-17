@@ -3,42 +3,43 @@
 @use "../../scss/mixins" as mx;
 @use "../../scss/placeholders";
 
-.wellcome {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&family=Oi&family=Pacifico&family=Rubik+Bubbles&family=Rubik+Scribble&display=swap");
 
-  @include mx.mq("md") {
-    gap: 40px;
-  }
+.wellcome {
+  @include mx.column-fs-cr(20px);
 
   @include mx.mq("lg") {
-    gap: 60px;
+    @include mx.column-fs-cr(40px);
   }
 
-  @include mx.mq("xl") {
-    gap: 80px;
+  // @include mx.mq("xl") {
+  //   gap: 80px;
+  // }
+
+  @include mx.mq("xxl") {
+    @include mx.column-fs-cr(80px);
   }
 
   h1 {
-    font-size: 24px;
-    font-weight: 700;
-    color: fn.get-color("success");
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    color: v.$brend;
+
+    @include mx.mq("lg") {
+      font-size: 48px;
+    }
   }
 }
 .box {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
+  @include mx.column-fs-cr(20px);
 
   @include mx.mq("md") {
-    flex-direction: row;
+    @include mx.row-fs-cr(40px);
     max-width: 880px;
-    gap: 40px;
   }
 
   @include mx.mq("lg") {
@@ -46,10 +47,10 @@
     max-width: 1000px;
   }
 
-  @include mx.mq("xl") {
-    gap: 100px;
-    max-width: 1200px;
-  }
+  // @include mx.mq("xl") {
+  //   gap: 100px;
+  //   max-width: 1200px;
+  // }
 
   img {
     width: 300px;
@@ -63,15 +64,11 @@
       width: 420px;
     }
 
-    @include mx.mq("xl") {
-      width: 480px;
-    }
+    // @include mx.mq("xl") {
+    //   width: 480px;
+    // }
   }
   .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 20px;
+    @include mx.column-fs-cr(20px);
   }
 }

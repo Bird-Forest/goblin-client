@@ -1,9 +1,33 @@
+$white: #ffffff;
+$card: #fafafb;
+$brend: #82c43c;
+$accent: #fcc419;
+$link: #4e75ff;
+$text: #292932;
+$gray: #b5b5be;
+
 $breacpoints: (
   "sm": 320px,
-  "md": 768px,
-  "lg": 1200px,
+  "md": 694px,
+  "lg": 1068px,
   "xl": 1440px,
-  // "xxl": 1920px,
+  "xxl": 1920px,
+);
+
+$main-font: "Montserrat";
+
+$font-weights: (
+  "Regular": 400,
+  "Medium": 500,
+  "SemiBold": 600,
+  "Bold": 700,
+);
+
+$font-sizes: (
+  "sm": 14px,
+  "md": 16px,
+  "lg": 20px,
+  "xl": 24px,
 );
 
 $colors: (
@@ -25,16 +49,6 @@ $colors: (
   "arrow": #fcc419,
   "transparent": transparent,
   "current": currentColor,
-  "one": #f9f871,
-  "two": #c4fcef,
-  "three": #fbeaff,
-  "fore": #d0e9f4,
-  "color-1": #cff768,
-  "#8AC926": #8ac926,
-  "ffca3a": #ffca3a,
-  "ff595e": #ff595e,
-  "#1982C4": #1982c4,
-  "#6A4C93": #6a4c93,
 );
 
 $paddings: (
@@ -49,22 +63,6 @@ $spacers: (
   "md": 32px,
   "lg": 36px,
   "xl": 68px,
-);
-
-$main-font: "Montserrat";
-
-$font-weights: (
-  "Regular": 400,
-  "Medium": 500,
-  "SemiBold": 600,
-  "Bold": 700,
-);
-
-$font-sizes: (
-  "sm": 14px,
-  "md": 16px,
-  "lg": 20px,
-  "xl": 24px,
 );
 
 $easings: (

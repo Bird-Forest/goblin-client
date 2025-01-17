@@ -28,21 +28,7 @@
   }
 }
 
-// @mixin page($direction, $justify, $align, $gap)
-
-  // @mixin frame($width, $height: $width, $is-circle: false) {
-  //   width: $width;
-  //   height: $height;
-  //   @if $is-circle {
-  //     border-radius: 50%;
-  //     overflow: hidden;
-  //   }
-  //   img {
-  //     object-fit: cover;
-  //     object-position: top center;
-  //   }
-  // }
-  @mixin scroll-bar {
+@mixin scroll-bar {
   &::-webkit-scrollbar {
     width: 14px;
   }
@@ -79,4 +65,44 @@
   // @if list.length() > 0 {
   //   transition-property: $properties;
   // }
+}
+
+@mixin column-fs-fs($gap) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: $gap;
+}
+
+@mixin column-fs-cr($gap) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin row-fs-cr($gap) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin row-cr-cr($gap) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin row-cr-fs($gap) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: $gap;
 }

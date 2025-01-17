@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { cities } from "../../constants/cities";
-import ArrowBtn from "./ArrowBtn";
 import cl from "./CitySelector.module.scss";
+import { PiListMagnifyingGlassBold } from "react-icons/pi";
 
 export default function CitySelector({ setSelectedCity }) {
   const [open, setOpen] = useState(false);
@@ -22,13 +22,8 @@ export default function CitySelector({ setSelectedCity }) {
           readOnly={option.city}
           placeholder="Оберіть найближче місто..."
         />
-        <button
-          type="button"
-          onClick={() => setOpen(!open)}
-          // className={styles.btnOpen}
-        >
-          <ArrowBtn />
-          {/* <IoMdArrowDropdown className={styles.iconOpen} /> */}
+        <button type="button" onClick={() => setOpen(!open)}>
+          <PiListMagnifyingGlassBold className={cl.icon} />
         </button>
       </label>
       <div className={!open ? cl.hidden : cl.visible}>

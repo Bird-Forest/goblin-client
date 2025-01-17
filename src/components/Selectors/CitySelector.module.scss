@@ -4,11 +4,8 @@
 @use "../../scss/placeholders";
 
 .select {
-  //   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  @include mx.column-fs-cr(4px);
+
   width: 320px;
 }
 
@@ -16,42 +13,54 @@
   position: relative;
   display: flex;
   input {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 16px;
+    @include mx.row-fs-cr(0px);
+    @extend %accent-text;
+
     width: 300px;
     height: 48px;
     border-radius: 12px;
-    border: 1px solid #b5b5be;
-    padding: 4px 8px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 4px 8px 4px 12px;
 
     &::placeholder {
-      color: #b5b5be;
+      @extend %details-small;
+      color: v.$gray;
     }
   }
   button {
     position: absolute;
     right: 0;
     display: inline-flex;
+    align-items: center;
     width: 48px;
     height: 48px;
+    .icon {
+      fill: v.$brend;
+      width: 28px;
+      height: 28px;
+    }
   }
 }
+
 .options {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: self-start;
+  @include mx.column-fs-fs(8px);
+
   width: 300px;
-  gap: 8px;
   padding: 8px;
   border-radius: 12px;
-  border: 1px solid #92929d;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 4px 8px 4px 12px;
+
+  cursor: pointer;
   li {
     width: 100%;
+    @extend %details;
+    transition: font-weight 0.2s linear;
     &:hover {
-      font-weight: 500;
-      background-color: #b5b5be;
+      font-weight: 700;
     }
   }
 }

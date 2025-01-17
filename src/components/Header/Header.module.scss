@@ -4,20 +4,34 @@
 @use "../../scss/placeholders";
 
 .wrapper {
-  display: inline-flex;
-  justify-content: space-between;
-  padding: 8px;
+  @include mx.row-fs-cr(40px);
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  padding: 10px;
+  margin: 0;
 
   @include mx.mq("md") {
-    padding: 8px 16px;
+    padding: 8px 20px;
   }
 
   @include mx.mq("lg") {
-    padding: 8px 32px;
+    padding: 8px 40px;
   }
 
   @include mx.mq("xl") {
-    padding: 8px 64px;
-    width: 1440px;
+    padding: 0 60px;
+  }
+
+  @include mx.mq("xxl") {
+    width: 1920px;
+    padding: 0 80px;
+  }
+
+  .area {
+    @include mx.row-cr-cr(0px);
+    @extend %subtitle;
+    color: v.$brend;
+    width: fit-content;
   }
 }

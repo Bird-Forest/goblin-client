@@ -1,14 +1,16 @@
 import { lazy } from "react";
 import { Route, Routes } from "react-router";
+import EmptyPage from "../components/Helper/EmptyPage";
 
 const Layout = lazy(() => import("../page/AppLayout"));
 const Main = lazy(() => import("../page/HomePage"));
-const Services = lazy(() => import("../page/ServicesPage"));
+// const Services = lazy(() => import("../page/ServicesPage"));
 const ServiceLayout = lazy(() => import("../page/ServiceLayout"));
-const People = lazy(() => import("../page/ServicePeople"));
+const Person = lazy(() => import("../page/ServicePerson"));
 const Home = lazy(() => import("../page/ServiceHome"));
 const Auth = lazy(() => import("../page/AuthPage"));
 const Master = lazy(() => import("../page/MasterPage"));
+
 const Error = lazy(() => import("../page/NotFound"));
 
 const AppRouter = () => {
@@ -16,10 +18,11 @@ const AppRouter = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Main />} />
-        <Route path="service/:city" element={<Services />}>
+        <Route path="service/:city">
           <Route element={<ServiceLayout />}>
-            <Route path="people" element={<People />} />
-            <Route path="home" element={<Home />} />
+            <Route index element={<EmptyPage />} />
+            <Route path="person/:category" element={<Person />} />
+            <Route path="home/:category" element={<Home />} />
           </Route>
         </Route>
         <Route path="auth" element={<Auth />} />

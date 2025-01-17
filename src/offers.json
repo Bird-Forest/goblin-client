@@ -1,0 +1,212 @@
+[
+  {
+    "city": { "city": "Калинівка", "path": "kalynivka" },
+    "route": "person",
+    "category": "health",
+    "user": "Sara",
+    "phone": "0675896232",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse ratione inventore unde doloremque placeat natus Praesentium veritatis unde molestiae fugit?",
+    "networks": {
+      "facebook": "https://www.facebook.com/UA.National.Police/",
+      "instagram": "https://www.instagram.com/national.police.ua/",
+      "website": "https://pixabay.com"
+    },
+    "rating": [false, false, false, false, false],
+    "reviews": [
+      {
+        "name": "Nik",
+        "stars": [true, true, true, true, true],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      }
+    ]
+  },
+  {
+    "city": { "city": "Вінниця", "path": "vinnytsia" },
+    "route": "person",
+    "category": "health",
+    "user": "Tom",
+    "phone": "0675896232",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse ratione inventore unde doloremque placeat natus Praesentium veritatis unde molestiae fugit?",
+    "networks": {
+      "facebook": "",
+      "instagram": "https://www.instagram.com/national.police.ua/",
+      "website": "https://pixabay.com"
+    },
+    "rating": [false, false, false, false, false],
+    "reviews": [
+      {
+        "name": "Nik",
+        "stars": [true, true, true, true, true],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      }
+    ]
+  },
+  {
+    "city": { "city": "Козятин", "path": "kozyatyn" },
+    "route": "person",
+    "category": "health",
+    "user": "Sara",
+    "phone": "0675896232",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse ratione inventore unde doloremque placeat natus Praesentium veritatis unde molestiae fugit?",
+    "networks": {
+      "facebook": "https://www.facebook.com/UA.National.Police/",
+      "instagram": "",
+      "website": "https://pixabay.com"
+    },
+    "rating": [false, false, false, false, false],
+    "reviews": [
+      {
+        "name": "Nik",
+        "stars": [true, true, true, true, true],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      }
+    ]
+  },
+  {
+    "city": { "city": "Хмільник", "path": "khmilnyk" },
+    "route": "person",
+    "category": "health",
+    "user": "Sara",
+    "phone": "0675896232",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse ratione inventore unde doloremque placeat natus Praesentium veritatis unde molestiae fugit?",
+    "networks": {
+      "facebook": "https://www.facebook.com/UA.National.Police/",
+      "instagram": "https://www.instagram.com/national.police.ua/",
+      "website": ""
+    },
+    "rating": [false, false, false, false, false],
+    "reviews": [
+      {
+        "name": "Nik",
+        "stars": [true, true, true, true, true],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      }
+    ]
+  },
+  {
+    "city": { "city": "Калинівка", "path": "kalynivka" },
+    "route": "person",
+    "category": "health",
+    "user": "Sara",
+    "phone": "0675896232",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse ratione inventore unde doloremque placeat natus Praesentium veritatis unde molestiae fugit?",
+    "networks": {
+      "facebook": "https://www.facebook.com/UA.National.Police/",
+      "instagram": "https://www.instagram.com/national.police.ua/",
+      "website": "https://pixabay.com"
+    },
+    "rating": [false, false, false, false, false],
+    "reviews": [
+      {
+        "name": "Nik",
+        "stars": [true, true, true, true, true],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      }
+    ]
+  },
+  {
+    "city": { "city": "Калинівка", "path": "kalynivka" },
+    "route": "person",
+    "category": "health",
+    "user": "Sara",
+    "phone": "0675896232",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse ratione inventore unde doloremque placeat natus Praesentium veritatis unde molestiae fugit?",
+    "networks": {
+      "facebook": "https://www.facebook.com/UA.National.Police/",
+      "instagram": "https://www.instagram.com/national.police.ua/",
+      "website": "https://pixabay.com"
+    },
+    "rating": [false, false, false, false, false],
+    "reviews": [
+      {
+        "name": "Nik",
+        "stars": [true, true, true, true, true],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      }
+    ]
+  },
+  {
+    "city": { "city": "Калинівка", "path": "kalynivka" },
+    "route": "person",
+    "category": "health",
+    "user": "Sara",
+    "phone": "0675896232",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse ratione inventore unde doloremque placeat natus Praesentium veritatis unde molestiae fugit?",
+    "networks": {
+      "facebook": "https://www.facebook.com/UA.National.Police/",
+      "instagram": "https://www.instagram.com/national.police.ua/",
+      "website": "https://pixabay.com"
+    },
+    "rating": [false, false, false, false, false],
+    "reviews": [
+      {
+        "name": "Nik",
+        "stars": [true, true, true, true, true],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      }
+    ]
+  },
+  {
+    "city": { "city": "Калинівка", "path": "kalynivka" },
+    "route": "person",
+    "category": "health",
+    "user": "Sara",
+    "phone": "0675896232",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse ratione inventore unde doloremque placeat natus Praesentium veritatis unde molestiae fugit?",
+    "networks": {
+      "facebook": "https://www.facebook.com/UA.National.Police/",
+      "instagram": "https://www.instagram.com/national.police.ua/",
+      "website": "https://pixabay.com"
+    },
+    "rating": [false, false, false, false, false],
+    "reviews": [
+      {
+        "name": "Nik",
+        "stars": [true, true, true, true, true],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      }
+    ]
+  },
+  {
+    "city": { "city": "Калинівка", "path": "kalynivka" },
+    "route": "person",
+    "category": "health",
+    "user": "Sara",
+    "phone": "0675896232",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse ratione inventore unde doloremque placeat natus Praesentium veritatis unde molestiae fugit?",
+    "networks": {
+      "facebook": "https://www.facebook.com/UA.National.Police/",
+      "instagram": "https://www.instagram.com/national.police.ua/",
+      "website": "https://pixabay.com"
+    },
+    "rating": [false, false, false, false, false],
+    "reviews": [
+      {
+        "name": "Nik",
+        "stars": [true, true, true, true, true],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      }
+    ]
+  },
+  {
+    "city": { "city": "Калинівка", "path": "kalynivka" },
+    "route": "person",
+    "category": "health",
+    "user": "Sara",
+    "phone": "0675896232",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse ratione inventore unde doloremque placeat natus Praesentium veritatis unde molestiae fugit?",
+    "networks": {
+      "facebook": "",
+      "instagram": "",
+      "website": ""
+    },
+    "rating": [false, false, false, false, false],
+    "reviews": [
+      {
+        "name": "Nik",
+        "stars": [true, true, true, true, true],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      }
+    ]
+  }
+]
