@@ -48,11 +48,13 @@ export default function Offer({ item }) {
       <div className={cl.wrappText}>
         <p>{item.text}</p>
       </div>
-      <SocialNetworks item={item} />
+      <div className={cl.bottomCase}>
+        <SocialNetworks item={item} />
 
-      <div className={cl.reviewBtn}>
-        <button>Прочитати відгуки</button>
-        <button>Залишити відгук</button>
+        <div className={cl.reviewBtn}>
+          <button>Прочитати відгуки</button>
+          <button>Залишити відгук</button>
+        </div>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ export default function SearchByWord({ getFilter }) {
 
   //   console.log(word);
   return (
-    <div>
+    <>
       <label className={cl.wrapSearch}>
         <input
           type="text"
@@ -26,6 +26,6 @@ export default function SearchByWord({ getFilter }) {
           <FaSearch className={cl.icon} />
         </button>
       </label>
-    </div>
+    </>
   );
 }

@@ -1,18 +1,14 @@
-import Offer from "../components/Offers/Item/Offer";
 import cl from "./page.module.scss";
 import offers from "../offers.json";
+import OffersByCategory from "../components/Offers/List/OffersByCategory";
+import TitleService from "../components/Titles/TitleService";
 
 export default function ServiceHome() {
   const data = offers;
   return (
-    <div className={cl.servicePage}>
-      <ul>
-        {data.map((item, i) => (
-          <li key={i}>
-            <Offer item={item} />
-          </li>
-        ))}
-      </ul>
+    <div>
+      <TitleService />
+      <OffersByCategory data={data} />
     </div>
   );
 }

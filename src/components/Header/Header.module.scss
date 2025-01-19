@@ -30,7 +30,7 @@
 
   .area {
     @include mx.row-cr-cr(0px);
-    @extend %subtitle;
+    @extend %shantell-text;
     color: v.$brend;
     width: fit-content;
   }

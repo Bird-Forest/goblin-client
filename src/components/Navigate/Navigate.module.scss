@@ -27,16 +27,16 @@
 }
 
 .navigate {
-  position: absolute;
+  position: fixed;
   z-index: 2;
-  top: 0;
+  top: 68px;
   left: 0;
 
-  @include mx.column-fs-fs(16px);
-  width: 320px;
+  @include mx.column-fs-fs(20px);
+  width: 100%;
   height: 100%;
 
-  padding: 16px 10px 40px 10px;
+  padding: 16px 10px 20px 10px;
   background-color: v.$brend;
   opacity: 0;
   pointer-events: none;
@@ -52,7 +52,7 @@
 
   @include mx.mq("md") {
     width: 340px;
-    padding: 20px 20px 60px 20px;
+    padding: 20px 20px 40px 20px;
   }
 
   @include mx.mq("lg") {
@@ -75,10 +75,7 @@
 }
 
 .radio {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  gap: 16px;
+  @include mx.row-fs-cr(16px);
   line-height: 32px;
   cursor: pointer;
 
@@ -95,7 +92,7 @@
   }
 
   span {
-    @extend %subtitle;
+    @extend %shantell-text;
 
     color: v.$white;
     transition: color 0.2s linear;
@@ -109,23 +106,35 @@
   }
 }
 // NavPerson
-.wrapLink {
+.listLink {
   @include mx.column-fs-fs(8px);
+  @include mx.scroll-bar;
+
+  overflow: auto;
   width: 100%;
-  margin-bottom: 0;
-  .link {
-    @extend %accent-text;
-    height: 28px;
-    color: v.$white;
-    transition: 0.2s all linear;
+  // max-height: 400px;
+  height: 100%;
 
-    &:hover {
-      font-weight: 700;
-    }
+  // padding-bottom: 40px;
+  margin-bottom: 40px;
 
-    &.active {
-      font-weight: 700;
-      color: v.$accent;
+  .wrapLink {
+    @include mx.row-fs-cr(0);
+
+    .link {
+      @extend %accent-text;
+      height: 28px;
+      color: v.$white;
+      transition: color 0.2s linear;
+
+      &:hover {
+        color: v.$accent;
+      }
+
+      &.active {
+        font-weight: 700;
+        color: v.$accent;
+      }
     }
   }
 }

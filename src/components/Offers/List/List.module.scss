@@ -3,7 +3,7 @@
 @use "../../../scss/mixins" as mx;
 @use "../../../scss/placeholders";
 
-.servicePage {
+.wrapOffers {
   @include mx.column-fs-cr(20px);
   width: 100%;
   height: 100%;
@@ -24,6 +24,7 @@
   .listOffers {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 
     li {

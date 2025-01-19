@@ -20,15 +20,6 @@ export default function NavigateService() {
       >
         <IoEllipsisVerticalSharp className={cl.iconMenu} />
       </button>
-      {/* {menu && (
-        <button
-          type="button"
-          onClick={() => setMenu(false)}
-          className={cl.btnMenu}
-        >
-          <IoEllipsisVerticalSharp className={cl.iconMenu} />
-        </button>
-      )} */}
 
       <div className={menu ? `${cl.navigate}` : `${cl.navigate} ${cl.isOpen}`}>
         <button

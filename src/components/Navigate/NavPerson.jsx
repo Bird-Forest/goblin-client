@@ -5,9 +5,9 @@ import cl from "./Navigate.module.scss";
 
 export default function NavPerson() {
   return (
-    <ul className={cl.wrapLink}>
+    <ul className={cl.listLink}>
       {categoryPerson.map((item, i) => (
-        <li key={i}>
+        <li key={i} className={cl.wrapLink}>
           <NavLink to={`person/${item.path}`}>
             {({ isActive }) => (
               <span

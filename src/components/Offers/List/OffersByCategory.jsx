@@ -29,23 +29,21 @@ export default function OffersByCategory({ data }) {
   // console.log(arrFilter);
   const Arr = Array.isArray(arrFilter) && arrFilter.length > 0;
   return (
-    <div>
-      <div className={cl.servicePage}>
-        <SearchByWord getFilter={getFilter} />
-        <div>
-          {Arr ? (
-            <ul className={cl.listOffers}>
-              {arrFilter.map((item, i) => (
-                <li key={i}>
-                  <Offer item={item} />
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <EmptyPage />
-          )}
-        </div>
-      </div>
+    <div className={cl.wrapOffers}>
+      <SearchByWord getFilter={getFilter} />
+      <>
+        {Arr ? (
+          <ul className={cl.listOffers}>
+            {arrFilter.map((item, i) => (
+              <li key={i}>
+                <Offer item={item} />
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <EmptyPage />
+        )}
+      </>
     </div>
   );
 }

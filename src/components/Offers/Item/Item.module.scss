@@ -6,7 +6,7 @@
 .wrappCard {
   @include mx.column-fs-fs(0px);
 
-  max-width: 600px;
+  max-width: 900px;
 
   height: auto;
   background-color: v.$card;
@@ -14,6 +14,10 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
   padding: 20px;
+
+  @include mx.mq("md") {
+    padding: 40px;
+  }
 }
 .userInfo {
   @include mx.row-fs-cr(40px);
@@ -51,43 +55,62 @@
 .wrappText {
   @extend %main-text;
   color: v.$text;
-  // text-align: justify;
+
   margin-bottom: 20px;
 }
+
 // SocialNetworks
 .links {
-  @include mx.row-fs-cr(40px);
-  width: 100%;
+  @include mx.row-fs-cr(0);
+  width: auto;
   height: 40px;
+  // margin-bottom: 20px;
+}
 
-  margin-bottom: 20px;
-  .visible {
-    display: block;
-  }
-  .hidden {
-    display: none;
-  }
+.hidden {
+  display: none;
+}
 
-  .iconLink {
+.visible {
+  display: block;
+  margin-right: 40px;
+}
+
+.iconLink {
+  color: rgba(v.$link, 0.5);
+  transition: fill 0.2s linear;
+  &:hover {
+    color: rgba(v.$link, 1);
+  }
+  svg {
     width: 40px;
     height: 40px;
+    fill: currentColor;
+  }
 
-    fill: rgba(v.$link, 0.5);
-    transition: fill 0.2s linear;
-    &:hover {
-      fill: rgba(v.$link, 1);
-    }
+  .hidden & {
+    display: none;
   }
 }
 
+.bottomCase {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 40px;
+  width: 100%;
+
+  margin-bottom: 20px;
+}
 .reviewBtn {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 100%;
-  margin-bottom: 20px;
+  // width: 100%;
+  // margin-bottom: 20px;
 
   button {
     @include mx.row-cr-cr(0px);
