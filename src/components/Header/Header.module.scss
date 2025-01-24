@@ -3,11 +3,13 @@
 @use "../../scss/mixins" as mx;
 @use "../../scss/placeholders";
 
+// @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Bubbles&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&family=Oi&family=Pacifico&family=Rubik+Bubbles&family=Rubik+Scribble&display=swap");
+
 .wrapper {
   @include mx.row-fs-cr(40px);
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
+
   padding: 10px;
   margin: 0;
 
@@ -30,8 +32,20 @@
 
   .area {
     @include mx.row-cr-cr(0px);
-    @extend %shantell-text;
+    @extend %shantell-title;
+    font-size: 24px;
     color: v.$brend;
     width: fit-content;
+  }
+
+  .oiRegular {
+    @include mx.row-cr-cr(0);
+    font-family: "Oi", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    color: v.$brend;
   }
 }

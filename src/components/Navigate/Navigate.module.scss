@@ -4,7 +4,8 @@
 @use "../../scss/placeholders";
 
 .btnMenu {
-  top: 68px;
+  // top: 68px;
+  top: 8vh;
   left: 0;
   z-index: 1;
   position: fixed;
@@ -14,10 +15,10 @@
   height: 52px;
   border-top-right-radius: 28px;
   border-bottom-right-radius: 28px;
-  background-color: v.$brend;
+  background-color: v.$accent;
   padding: 0;
   .iconMenu {
-    fill: v.$white;
+    fill: v.$card;
     width: 24px;
     height: 24px;
   }
@@ -29,7 +30,8 @@
 .navigate {
   position: fixed;
   z-index: 2;
-  top: 68px;
+  // top: 68px;
+  top: 8vh;
   left: 0;
 
   @include mx.column-fs-fs(20px);
@@ -51,8 +53,7 @@
   }
 
   @include mx.mq("md") {
-    width: 340px;
-    padding: 20px 20px 40px 20px;
+    padding: 20px 20px 80px 20px;
   }
 
   @include mx.mq("lg") {
@@ -63,14 +64,15 @@
     opacity: 1;
     pointer-events: initial;
     visibility: visible;
+    width: 340px;
+    padding: 20px 20px 40px 20px;
   }
 }
 
 .wrappRadio {
   @include mx.column-fs-fs(8px);
   width: 100%;
-  gap: 8px;
-  padding: 20px 0 28px 0;
+  padding-bottom: 20px;
   border-bottom: 2px solid v.$accent;
 }
 
@@ -85,7 +87,7 @@
     width: 20px;
     height: 20px;
 
-    border: 4px solid v.$white;
+    border: 4px solid v.$card;
     transition: 0.2s all linear;
 
     position: relative;
@@ -94,7 +96,7 @@
   span {
     @extend %shantell-text;
 
-    color: v.$white;
+    color: v.$card;
     transition: color 0.2s linear;
   }
 
@@ -112,11 +114,7 @@
 
   overflow: auto;
   width: 100%;
-  // max-height: 400px;
   height: 100%;
-
-  // padding-bottom: 40px;
-  margin-bottom: 40px;
 
   .wrapLink {
     @include mx.row-fs-cr(0);
@@ -124,7 +122,8 @@
     .link {
       @extend %accent-text;
       height: 28px;
-      color: v.$white;
+
+      color: v.$card;
       transition: color 0.2s linear;
 
       &:hover {
@@ -146,11 +145,19 @@
   display: inline-flex;
   width: 24px;
   height: 24px;
+  color: v.$card;
+
+  &:hover,
+  &:focus {
+    color: v.$accent;
+  }
+
   .iconClose {
-    fill: v.$white;
+    fill: currentColor;
     width: 24px;
     height: 24px;
   }
+
   @include mx.mq("lg") {
     display: none;
   }

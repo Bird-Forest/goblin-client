@@ -5,6 +5,13 @@
 
 .wrapTitle {
   @include mx.row-fs-cr(20px);
+  width: 100%;
+  // max-width: 900px;
+  padding-left: 40px;
+
+  @include mx.mq("lg") {
+    padding-left: 0;
+  }
   .box {
     display: none;
 
@@ -13,9 +20,11 @@
 
       width: 48px;
       height: 48px;
-      background-color: #b5b5be;
+      background-color: v.$accent;
       border-radius: 39% 61% 69% 31% / 85% 76% 24% 15%;
-      color: v.$white;
+      // color: v.$white;
+      // color: #ffffff;
+      color: v.$card;
 
       svg {
         width: 24px;
@@ -25,13 +34,13 @@
   }
   h2 {
     @extend %shantell-title;
-    color: #92929d;
+    // color: #4f646f;
+    color: v.$card;
     font-size: 24px;
-    padding-left: 40px;
+    // padding-left: 40px;
 
     @include mx.mq("md") {
       font-size: 28px;
-      padding-left: 0;
     }
   }
 }

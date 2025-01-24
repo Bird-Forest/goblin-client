@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import cl from "./List.module.scss";
+import cl from "./list.module.scss";
 import Offer from "../Item/Offer";
 import SearchByWord from "../Search/SearchByWord";
 import EmptyPage from "../../Helper/EmptyPage";
@@ -26,11 +26,13 @@ export default function OffersByCategory({ data }) {
     setArrFilter(arr);
   }, [data, filter]);
 
+  const arrLenght = arrFilter.length;
+
   // console.log(arrFilter);
-  const Arr = Array.isArray(arrFilter) && arrFilter.length > 0;
+  const Arr = Array.isArray(arrFilter) && arrLenght > 0;
   return (
     <div className={cl.wrapOffers}>
-      <SearchByWord getFilter={getFilter} />
+      <SearchByWord getFilter={getFilter} arrLenght={arrLenght} />
       <>
         {Arr ? (
           <ul className={cl.listOffers}>

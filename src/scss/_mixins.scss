@@ -3,6 +3,7 @@
 
 @use "variables" as v;
 @use "functions" as fn;
+@use "placeholders";
 
 @mixin mq($bp: sm, $type: min, $is-retina: false) {
   @if map.has-key(v.$breacpoints, $bp) {
@@ -35,24 +36,27 @@
 
   &::-webkit-scrollbar-track {
     background-color: transparent;
+    // background-color: rgba(v.$white, 0.3);
     border-radius: 100px;
     margin: 20px 0 40px 0;
 
-    &:hover {
-      background-color: rgba(v.$white, 0.3);
-    }
+    // &:hover {
+    //   background-color: rgba(v.$white, 0.3);
+    // }
   }
 
   &::-webkit-scrollbar-thumb {
     // background-color: fn.get-color("light-secondary");
-    background-color: rgba(v.$white, 0);
+    // background-color: rgba(v.$white, 0.3);
+    background-color: rgba(v.$accent, 0.5);
     // background-clip: content-box;
     background-clip: 40px;
     border: 5px solid transparent;
     border-radius: 100px;
 
     &:hover {
-      background-color: rgba(v.$white, 1);
+      // background-color: rgba(v.$white, 0.7);
+      background-color: rgba(v.$accent, 1);
       // background-color: fn.get-color("accent-primary");
     }
   }
@@ -111,10 +115,57 @@
   gap: $gap;
 }
 
-@mixin row-cr-fs($gap) {
+@mixin row-fs-fs($gap) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: $gap;
+}
+
+@mixin input($height) {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: $height;
+  @extend %accent-text;
+  border-radius: 8px;
+
+  background-color: v.$card;
+  //  32
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 8px 12px;
+
+  &::placeholder {
+    @extend %small-text;
+    color: v.$gray;
+  }
+}
+
+@mixin btn-card($width) {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start;
-  gap: $gap;
+  align-items: center;
+
+  width: $width;
+  height: 48px;
+  border-radius: 8px;
+  padding: 8px;
+
+  @extend %details;
+  text-align: center;
+
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  background-color: v.$card;
+  transition: background-color 0.2s linear;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: v.$link;
+    color: v.$white;
+  }
 }

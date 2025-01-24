@@ -12,13 +12,7 @@
       "website": "https://pixabay.com"
     },
     "rating": [false, false, false, false, false],
-    "reviews": [
-      {
-        "name": "Nik",
-        "stars": [true, true, true, true, true],
-        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
-      }
-    ]
+    "reviews": []
   },
   {
     "city": { "city": "Вінниця", "path": "vinnytsia" },
@@ -35,8 +29,63 @@
     "rating": [false, false, false, false, false],
     "reviews": [
       {
+        "date": "2024.11.25",
         "name": "Nik",
         "stars": [true, true, true, true, true],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      },
+      {
+        "date": "2024.11.25",
+        "name": "Anna",
+        "stars": [true, true, true, true, false],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      },
+      {
+        "date": "2024.11.25",
+        "name": "Tom",
+        "stars": [true, true, true, false, false],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      },
+      {
+        "date": "2024.11.25",
+        "name": "Sandra",
+        "stars": [true, true, true, true, true],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      },
+      {
+        "date": "2024.11.25",
+        "name": "Nikolas",
+        "stars": [true, true, false, false, false],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      },
+      {
+        "date": "2024.11.25",
+        "name": "Nik",
+        "stars": [true, true, true, true, true],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      },
+      {
+        "date": "2024.11.25",
+        "name": "Anna",
+        "stars": [true, true, true, true, false],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      },
+      {
+        "date": "2024.11.25",
+        "name": "Tom",
+        "stars": [true, true, true, false, false],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      },
+      {
+        "date": "2024.11.25",
+        "name": "Sandra",
+        "stars": [true, true, true, true, true],
+        "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
+      },
+      {
+        "date": "2024.11.25",
+        "name": "Nikolas",
+        "stars": [true, true, false, false, false],
         "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, beatae non velit quidem culpa delectus perspiciatis quas nobis esse"
       }
     ]

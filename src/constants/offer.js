@@ -9,6 +9,7 @@ const offer = {
   networks: { facebook: "", instagram: "", website: "" },
   reviews: [
     {
+      date: "",
       name: "",
       stars: [false, false, false, false, false],
       comment: "",

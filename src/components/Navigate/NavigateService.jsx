@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavPerson from "./NavPerson";
 // import { NavLink, useLocation } from "react-router";
-import cl from "./Navigate.module.scss";
+import cl from "./navigate.module.scss";
 import NavHome from "./NavHome";
 import { IoClose, IoEllipsisVerticalSharp } from "react-icons/io5";
 import NavEmpty from "./NavEmpty";
@@ -10,7 +10,7 @@ export default function NavigateService() {
   const [page, setPage] = useState("");
   const [menu, setMenu] = useState(true);
 
-  console.log(page);
+  // console.log(page);
   return (
     <>
       <button

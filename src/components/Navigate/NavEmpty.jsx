@@ -1,5 +1,5 @@
 import React from "react";
-import cl from "./Navigate.module.scss";
+import cl from "./navigate.module.scss";
 import { FaCar, FaUserMd, FaSnowplow, FaPlug, FaBath } from "react-icons/fa";
 // import { GiTreehouse } from "react-icons/gi";
 import { GiFruitTree } from "react-icons/gi";

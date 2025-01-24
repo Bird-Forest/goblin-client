@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { cities } from "../../constants/cities";
-import cl from "./CitySelector.module.scss";
+import cl from "./city-select.module.scss";
 import { PiListMagnifyingGlassBold } from "react-icons/pi";
 
 export default function CitySelector({ setSelectedCity }) {

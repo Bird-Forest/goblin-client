@@ -1,4 +1,4 @@
-import cl from "./Empty.module.scss";
+import cl from "./empty.module.scss";
 import yoga from "/yoga.jpg";
 
 export default function EmptyPage() {

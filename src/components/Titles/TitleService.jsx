@@ -1,5 +1,5 @@
 import React from "react";
-import cl from "./Titles.module.scss";
+import cl from "./titles.module.scss";
 import { useLocation } from "react-router";
 import { categoryPerson } from "../../constants/category-person";
 import { categoryHome } from "../../constants/category-home";

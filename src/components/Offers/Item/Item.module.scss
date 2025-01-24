@@ -15,9 +15,9 @@
 
   padding: 20px;
 
-  @include mx.mq("md") {
-    padding: 40px;
-  }
+  // @include mx.mq("md") {
+  //   padding: 40px;
+  // }
 }
 .userInfo {
   @include mx.row-fs-cr(40px);
@@ -74,12 +74,17 @@
 .visible {
   display: block;
   margin-right: 40px;
+
+  @include mx.mq("lg") {
+    margin-right: 20px;
+  }
 }
 
 .iconLink {
   color: rgba(v.$link, 0.5);
   transition: fill 0.2s linear;
   &:hover {
+    // color: rgba(v.$link, 1);
     color: rgba(v.$link, 1);
   }
   svg {
@@ -97,42 +102,37 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  row-gap: 20px;
-  column-gap: 40px;
+  gap: 20px;
+  // row-gap: 20px;
+  // column-gap: 40px;
   width: 100%;
 
   margin-bottom: 20px;
 }
 .reviewBtn {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  // width: 100%;
-  // margin-bottom: 20px;
 
   button {
-    @include mx.row-cr-cr(0px);
-
-    width: 240px;
+    @include mx.btn-card(240px);
     height: 48px;
-    border-radius: 8px;
-    padding: 8px;
 
-    @extend %details;
-    text-align: center;
-
-    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
-      rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-    background-color: v.$card;
-    transition: background-color 0.2s linear;
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-      background-color: v.$link;
-      color: v.$white;
+    @include mx.mq("lg") {
+      // @include mx.btn-card(200px);
+      width: 200px;
+    }
+    @include mx.mq("xl") {
+      // @include mx.btn-card(200px);
+      width: 240px;
     }
   }
 }
+
+// .modalOpen {
+//   overflow: hidden;
+//   padding-right: 15px; /* Для компенсации ширины скроллбара */
+// }

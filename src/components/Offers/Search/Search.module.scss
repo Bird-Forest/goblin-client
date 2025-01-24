@@ -4,32 +4,28 @@
 @use "../../../scss/placeholders";
 
 .wrapSearch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  p {
+    @extend %shantell-text;
+    color: v.$card;
+  }
+}
+
+.labelSearch {
   position: relative;
   @include mx.row-fs-cr(0px);
 
   width: 300px;
-  height: 60px;
+  height: fit-content;
 
-  @include mx.mq("md") {
-    width: 600px;
-  }
-
-  input {
-    @include mx.row-fs-cr(0px);
-    @extend %accent-text;
+  .search {
+    @include mx.input(48px);
     width: inherit;
-    height: 48px;
-    border-radius: 12px;
-    //  32
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    padding: 8px 40px 8px 12px;
-
-    &::placeholder {
-      @extend %small-text;
-      color: v.$gray;
-    }
   }
+
   button {
     position: absolute;
     right: 0;

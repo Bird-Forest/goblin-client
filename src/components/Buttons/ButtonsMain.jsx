@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import cl from "./ButtonsMain.module.scss";
+import cl from "./buttons.module.scss";
 import search from "/search.jpg";
 import service from "/service.jpg";
 

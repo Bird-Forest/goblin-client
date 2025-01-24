@@ -1,0 +1,12 @@
+@use "../../../scss/variables" as v;
+@use "../../../scss/functions" as fn;
+@use "../../../scss/mixins" as mx;
+@use "../../../scss/placeholders";
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 60px;
+}

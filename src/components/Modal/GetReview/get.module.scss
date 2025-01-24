@@ -1,0 +1,41 @@
+@use "../../../scss/variables" as v;
+@use "../../../scss/functions" as fn;
+@use "../../../scss/mixins" as mx;
+@use "../../../scss/placeholders";
+
+.wrapReviews {
+  @include mx.column-fs-cr(8px);
+  overflow: auto;
+  @include mx.scroll-bar;
+  width: auto;
+  max-width: 900px;
+  max-height: 80vh;
+  padding-right: 16px;
+}
+
+.boxReview {
+  @include mx.column-fs-fs(8px);
+  padding-bottom: 16px;
+
+  border-bottom: 4px dotted v.$link;
+}
+
+.wrapInfo {
+  @include mx.row-fs-fs(40px);
+  @extend %accent-text;
+  color: black;
+}
+
+.wrapStars {
+  @include mx.row-fs-fs(8px);
+
+  .star {
+    width: 20px;
+    height: 20px;
+    fill: v.$accent;
+  }
+}
+
+.wrapComment {
+  @extend %main-text;
+}

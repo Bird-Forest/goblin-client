@@ -1,5 +1,5 @@
 import gb from "/goblin.jpg";
-import cl from "./Wellcome.module.scss";
+import cl from "./wellcome.module.scss";
 
 export default function Wellcome() {
   return (

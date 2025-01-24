@@ -1,0 +1,17 @@
+@use "../../scss/variables" as v;
+@use "../../scss/functions" as fn;
+@use "../../scss/mixins" as mx;
+@use "../../scss/placeholders";
+
+.wrapNotice {
+  position: absolute;
+  left: 0;
+  bottom: 56px;
+  @include mx.row-cr-cr(16px);
+  width: 240px;
+  height: 80px;
+  background-color: #fcd04a;
+  border-radius: 12px;
+  @extend %details;
+  color: v.$card;
+}

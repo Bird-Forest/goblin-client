@@ -1,7 +1,7 @@
 import React from "react";
 import { categoryHome } from "../../constants/category-home";
 import { NavLink } from "react-router";
-import cl from "./Navigate.module.scss";
+import cl from "./navigate.module.scss";
 
 export default function NavHome() {
   return (
