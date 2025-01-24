@@ -4,14 +4,11 @@
 @use "../../scss/placeholders";
 
 .wrapBtn {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
-  @include mx.mq("md") {
-    flex-direction: row;
-  }
+  @include mx.column-fs-cr(20px);
+
+  // @include mx.mq("md") {
+  //   flex-direction: row;
+  // }
 }
 
 .btnMain {

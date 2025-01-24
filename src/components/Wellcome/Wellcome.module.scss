@@ -8,17 +8,17 @@
 .wellcome {
   @include mx.column-fs-cr(20px);
 
-  @include mx.mq("lg") {
-    @include mx.column-fs-cr(40px);
-  }
+  // @include mx.mq("lg") {
+  //   @include mx.column-fs-cr(40px);
+  // }
 
   // @include mx.mq("xl") {
   //   gap: 80px;
   // }
 
-  @include mx.mq("xxl") {
-    @include mx.column-fs-cr(80px);
-  }
+  // @include mx.mq("xxl") {
+  //   @include mx.column-fs-cr(80px);
+  // }
 
   h1 {
     font-family: "Pacifico", serif;
@@ -36,28 +36,29 @@
 }
 .box {
   @include mx.column-fs-cr(20px);
+  max-width: 300px;
 
-  @include mx.mq("md") {
-    @include mx.row-fs-cr(40px);
-    max-width: 880px;
-  }
+  // @include mx.mq("md") {
+  //   @include mx.row-fs-cr(40px);
+  //   max-width: 300px;
+  // }
 
-  @include mx.mq("lg") {
-    gap: 80px;
-    max-width: 1000px;
-  }
+  // @include mx.mq("lg") {
+  //   gap: 80px;
+  //   max-width: 1000px;
+  // }
 
   img {
     width: 300px;
     height: auto;
 
-    @include mx.mq("md") {
-      width: 340px;
-    }
+    // @include mx.mq("md") {
+    //   width: 340px;
+    // }
 
-    @include mx.mq("lg") {
-      width: 420px;
-    }
+    // @include mx.mq("lg") {
+    //   width: 420px;
+    // }
 
     // @include mx.mq("xl") {
     //   width: 480px;

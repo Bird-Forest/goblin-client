@@ -15,8 +15,10 @@ export default function HomePage() {
   return (
     <section className={cl.home}>
       <Wellcome />
-      <CitySelector setSelectedCity={setSelectedCity} />
-      <ButtonsMain city={city} />
+      <div className={cl.selectCase}>
+        <CitySelector setSelectedCity={setSelectedCity} />
+        <ButtonsMain city={city} />
+      </div>
     </section>
   );
 }
