@@ -1,0 +1,1 @@
+import{j as r}from"./index-iY-zw8p4.js";import{T as o,O as s,o as t}from"./TitleService-6uInTcej.js";import"./category-home-toIAQ9FC.js";import"./iconBase-Bh3R9tJa.js";function n(){const e=t;return r.jsxs("div",{children:[r.jsx(o,{}),r.jsx(s,{data:e})]})}export{n as default};
