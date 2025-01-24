@@ -6,7 +6,7 @@ import TitleService from "../components/Titles/TitleService";
 export default function ServiceHome() {
   const data = offers;
   return (
-    <div>
+    <div className={cl.servicePage}>
       <TitleService />
       <OffersByCategory data={data} />
     </div>

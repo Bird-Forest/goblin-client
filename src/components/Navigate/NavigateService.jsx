@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import NavPerson from "./NavPerson";
-// import { NavLink, useLocation } from "react-router";
 import cl from "./navigate.module.scss";
 import NavHome from "./NavHome";
 import { IoClose, IoEllipsisVerticalSharp } from "react-icons/io5";

@@ -6,12 +6,12 @@ body {
   @extend %main-text;
 
   font-family: v.$main-font, sans-serif;
-  color: fn.get-color("dark-tertiary");
+  color: v.$text;
 }
 
 button {
   font-family: inherit;
-  color: fn.get-color("current");
+  color: v.$current;
   cursor: pointer;
 }
 

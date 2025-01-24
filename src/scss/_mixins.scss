@@ -36,28 +36,19 @@
 
   &::-webkit-scrollbar-track {
     background-color: transparent;
-    // background-color: rgba(v.$white, 0.3);
     border-radius: 100px;
     margin: 80px 0 80px 0;
-
-    // &:hover {
-    //   background-color: rgba(v.$white, 0.3);
-    // }
   }
 
   &::-webkit-scrollbar-thumb {
-    // background-color: fn.get-color("light-secondary");
-    // background-color: rgba(v.$white, 0.3);
     background-color: rgba(v.$accent, 0.5);
-    // background-clip: content-box;
+
     background-clip: 40px;
     border: 5px solid transparent;
     border-radius: 100px;
 
     &:hover {
-      // background-color: rgba(v.$white, 0.7);
       background-color: rgba(v.$accent, 1);
-      // background-color: fn.get-color("accent-primary");
     }
   }
 }
@@ -69,10 +60,6 @@
   } @else {
     @warn "The variable  $ease is not defined";
   }
-
-  // @if list.length() > 0 {
-  //   transition-property: $properties;
-  // }
 }
 
 @mixin column-fs-fs($gap) {

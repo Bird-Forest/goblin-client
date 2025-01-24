@@ -6,12 +6,8 @@
 .wrapTitle {
   @include mx.row-fs-cr(20px);
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
   padding-left: 40px;
-
-  @include mx.mq("lg") {
-    padding-left: 0;
-  }
   .box {
     display: none;
 
