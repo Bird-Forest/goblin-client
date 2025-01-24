@@ -5,7 +5,7 @@
 
 .btnMenu {
   // top: 68px;
-  top: 8vh;
+  top: 60px;
   left: 0;
   z-index: 1;
   position: fixed;
@@ -31,7 +31,7 @@
   position: fixed;
   z-index: 2;
   // top: 68px;
-  top: 8vh;
+  top: 60px;
   left: 0;
 
   @include mx.column-fs-fs(20px);

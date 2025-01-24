@@ -4,13 +4,20 @@
 @use "../../../scss/placeholders";
 
 .wrapSearch {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include mx.column-fs-cr(8px);
+
   width: 100%;
   p {
     @extend %shantell-text;
     color: v.$card;
+    text-align: center;
+  }
+
+  @include mx.mq("md") {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 

@@ -6,7 +6,7 @@
 .wrapTitle {
   @include mx.row-fs-cr(20px);
   width: 100%;
-  // max-width: 900px;
+  max-width: 900px;
   padding-left: 40px;
 
   @include mx.mq("lg") {
@@ -22,8 +22,6 @@
       height: 48px;
       background-color: v.$accent;
       border-radius: 39% 61% 69% 31% / 85% 76% 24% 15%;
-      // color: v.$white;
-      // color: #ffffff;
       color: v.$card;
 
       svg {
@@ -34,10 +32,8 @@
   }
   h2 {
     @extend %shantell-title;
-    // color: #4f646f;
-    color: v.$card;
     font-size: 24px;
-    // padding-left: 40px;
+    color: v.$card;
 
     @include mx.mq("md") {
       font-size: 28px;
