@@ -29,8 +29,9 @@
   h2 {
     @extend %shantell-title;
     font-size: 24px;
-    // color: v.$card;
-    color: v.$link;
+    color: v.$card;
+    // color: v.$link;
+    // color: #92929d;
 
     @include mx.mq("md") {
       font-size: 28px;

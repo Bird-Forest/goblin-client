@@ -15,6 +15,7 @@
   border-top-right-radius: 28px;
   border-bottom-right-radius: 28px;
   background-color: v.$accent;
+
   padding: 0;
   .iconMenu {
     fill: v.$card;
@@ -37,7 +38,8 @@
   height: calc(100vh - 60px);
 
   padding: 16px 10px 20px 10px;
-  background-color: v.$brend;
+  // background-color: v.$brend;
+  background-color: #92929d;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;

@@ -41,14 +41,14 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: rgba(v.$accent, 0.5);
+    background-color: rgba(v.$white, 0.2);
 
     background-clip: 40px;
     border: 5px solid transparent;
     border-radius: 100px;
 
     &:hover {
-      background-color: rgba(v.$accent, 1);
+      background-color: rgba(v.$white, 0.5);
     }
   }
 }
