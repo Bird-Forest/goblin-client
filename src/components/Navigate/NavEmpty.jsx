@@ -1,14 +1,21 @@
 import React from "react";
 import cl from "./navigate.module.scss";
-import { FaCar, FaUserMd, FaSnowplow, FaPlug, FaBath } from "react-icons/fa";
+// import { BsHandIndexFill, BsHandIndex } from "react-icons/bs";
+import { PiHandTapBold } from "react-icons/pi";
+// import { FaCar, FaUserMd, FaSnowplow, FaPlug, FaBath } from "react-icons/fa";
 // import { GiTreehouse } from "react-icons/gi";
-import { GiFruitTree } from "react-icons/gi";
-import { BsCake2Fill, BsTools } from "react-icons/bs";
+// import { GiFruitTree } from "react-icons/gi";
+// import { BsCake2Fill, BsTools } from "react-icons/bs";
 
 export default function NavEmpty() {
   return (
     <div className={cl.wrapStub}>
-      <div className={cl.caseRight}>
+      <PiHandTapBold className={cl.iconNav} />
+      {/* <BsHandIndexFill />
+      <BsHandIndex className={cl.iconNav} /> */}
+      {/* <p>Обрати</p> */}
+
+      {/* <div className={cl.caseRight}>
         <span className={cl.boxR}>
           <FaCar className={cl.iconEmpty} />
         </span>
@@ -47,7 +54,7 @@ export default function NavEmpty() {
         <span className={cl.boxL}>
           <FaBath className={cl.iconEmpty} />
         </span>
-      </div>
+      </div> */}
     </div>
   );
 }

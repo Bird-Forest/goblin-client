@@ -63,9 +63,9 @@
   li {
     width: 100%;
     @extend %details;
-    transition: font-weight 0.2s linear;
+    transition: color 0.2s linear;
     &:hover {
-      font-weight: 700;
+      color: v.$brend;
     }
   }
 }

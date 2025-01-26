@@ -116,9 +116,11 @@
   align-items: center;
   height: $height;
   @extend %accent-text;
-  border-radius: 8px;
+  // border-radius: 8px;
+  border-radius: 4px;
 
-  background-color: v.$card;
+  // background-color: v.$card;
+  background-color: #ffffff;
   //  32
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
