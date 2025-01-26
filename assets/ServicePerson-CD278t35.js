@@ -1,0 +1,1 @@
+import{j as r}from"./index-B07NJVwv.js";import{c as e}from"./page.module-D_bOILRI.js";import{T as o,O as t,o as a}from"./TitleService-C4s7lfLR.js";import"./category-home-CaRbbop0.js";import"./iconBase-D7gGcUnF.js";function p(){const s=a;return r.jsxs("div",{className:e.servicePage,children:[r.jsx(o,{}),r.jsx(t,{data:s})]})}export{p as default};
