@@ -78,6 +78,14 @@
   gap: $gap;
 }
 
+@mixin column-cr-cr($gap) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
 @mixin row-fs-cr($gap) {
   display: flex;
   flex-direction: row;
@@ -116,15 +124,14 @@
   align-items: center;
   height: $height;
   @extend %accent-text;
-  // border-radius: 8px;
   border-radius: 4px;
 
-  // background-color: v.$card;
-  background-color: #ffffff;
+  background-color: v.$card;
+  // background-color: #ffffff;
   //  32
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  padding: 8px 12px;
+  padding: 8px 0 8px 12px;
 
   &::placeholder {
     @extend %small-text;
@@ -140,7 +147,7 @@
 
   width: $width;
   height: 48px;
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 8px;
 
   @extend %details;
@@ -157,4 +164,30 @@
     background-color: v.$link;
     color: v.$white;
   }
+}
+
+@mixin btn-close($top, $right) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  width: 28px;
+  height: 28px;
+  color: v.$text;
+  svg {
+    width: 28px;
+    height: 28px;
+    fill: currentColor;
+  }
+}
+
+@mixin form($gap, $min, $max) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: $gap;
+  min-width: $min;
+  max-width: $max;
+  width: 100%;
+  height: auto;
 }

@@ -3,14 +3,34 @@
 @use "../../../scss/mixins" as mx;
 @use "../../../scss/placeholders";
 
-.wrapReviews {
-  @include mx.column-fs-cr(8px);
-  overflow: auto;
-  @include mx.scroll-bar;
-  width: auto;
+.wrapContent {
+  position: relative;
+  @include mx.column-fs-cr(0);
   max-width: 900px;
   max-height: 80vh;
-  padding-right: 16px;
+
+  background-color: v.$card;
+  border-radius: 4px;
+  padding: 40px 10px;
+
+  overflow: auto;
+  @include mx.scroll-bar;
+
+  @include mx.mq("md") {
+    padding: 40px;
+  }
+
+  .close {
+    @include mx.btn-close(16px, 12px);
+  }
+
+  .wrapReviews {
+    @include mx.column-fs-cr(8px);
+
+    width: 100%;
+    // padding: 40px 0;
+    // padding-right: 8px;
+  }
 }
 
 .boxReview {
@@ -23,7 +43,7 @@
 .wrapInfo {
   @include mx.row-fs-fs(40px);
   @extend %accent-text;
-  color: black;
+  color: v.$text;
 }
 
 .wrapStars {

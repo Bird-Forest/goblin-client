@@ -11,7 +11,7 @@ export default function Input({ label, register, name, errors, placeholder }) {
       <input
         placeholder={placeholder}
         {...register(name)}
-        className={cl.field}
+        className={cl.fieldIt}
       />
       <p className={cl.error}>{errors?.[name]?.message}</p>
     </label>

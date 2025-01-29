@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import NavPerson from "./NavPerson";
 import cl from "./navigate.module.scss";
 import NavHome from "./NavHome";
-import { IoClose, IoEllipsisVerticalSharp } from "react-icons/io5";
+import { FaXmark, FaEllipsisVertical } from "react-icons/fa6";
 import NavEmpty from "./NavEmpty";
 
 export default function NavigateService() {
@@ -17,7 +17,7 @@ export default function NavigateService() {
         onClick={() => setMenu(false)}
         className={cl.btnMenu}
       >
-        <IoEllipsisVerticalSharp className={cl.iconMenu} />
+        <FaEllipsisVertical className={cl.iconMenu} />
       </button>
 
       <div className={menu ? `${cl.navigate}` : `${cl.navigate} ${cl.isOpen}`}>
@@ -26,7 +26,7 @@ export default function NavigateService() {
           onClick={() => setMenu(true)}
           className={cl.btnClose}
         >
-          <IoClose className={cl.iconClose} />
+          <FaXmark className={cl.iconClose} />
         </button>
         <fieldset className={cl.wrappRadio}>
           <label htmlFor="person" className={cl.radio}>

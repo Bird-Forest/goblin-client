@@ -1,18 +1,21 @@
 import React, { useState } from "react";
-import { FaSearch } from "react-icons/fa";
+import { FaXmark, FaMagnifyingGlass } from "react-icons/fa6";
 import cl from "./search.module.scss";
 
-export default function SearchByWord({ getFilter, arrLenght }) {
+export default function SearchByWord({ getFilter, clearFilter, arrLenght }) {
   const [word, setWord] = useState("");
 
   const wordForFilter = () => {
     if (word === "") return;
     const filter = word.trim();
     getFilter(filter);
-    setWord("");
   };
 
-  //   console.log(word);
+  const clearSearch = () => {
+    setWord("");
+    clearFilter();
+  };
+
   return (
     <div className={cl.wrapSearch}>
       <p>
@@ -26,9 +29,14 @@ export default function SearchByWord({ getFilter, arrLenght }) {
           onChange={(e) => setWord(e.target.value)}
           className={cl.search}
         />
-        <button type="button" onClick={wordForFilter}>
-          <FaSearch className={cl.icon} />
-        </button>
+        <div className={cl.wrapBtn}>
+          <button type="button" onClick={wordForFilter}>
+            <FaMagnifyingGlass className={cl.icon} />
+          </button>
+          <button type="button" onClick={clearSearch}>
+            <FaXmark className={cl.icon} />
+          </button>
+        </div>
       </label>
     </div>
   );

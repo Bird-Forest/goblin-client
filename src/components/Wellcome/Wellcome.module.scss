@@ -3,10 +3,11 @@
 @use "../../scss/mixins" as mx;
 @use "../../scss/placeholders";
 
-@import url("https://fonts.googleapis.com/css2?family=Kablammo&family=Oi&family=Pacifico&family=Rubik+Bubbles&family=Rubik+Scribble&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Kablammo&family=Oi&family=Pacifico&family=Rubik+Bubbles&family=Rubik+Scribble&display=swap");
 
 .wellcome {
   @include mx.column-fs-cr(20px);
+  padding: 40px 0;
 
   // @include mx.mq("lg") {
   //   @include mx.column-fs-cr(40px);
@@ -20,19 +21,19 @@
   //   @include mx.column-fs-cr(80px);
   // }
 
-  h1 {
-    font-family: "Pacifico", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 1.2;
-    letter-spacing: 0.08em;
-    color: v.$brend;
+  // h1 {
+  //   font-family: "Pacifico", serif;
+  //   font-weight: 400;
+  //   font-style: normal;
+  //   font-size: 32px;
+  //   line-height: 1.2;
+  //   letter-spacing: 0.08em;
+  //   color: v.$brend;
 
-    @include mx.mq("lg") {
-      font-size: 48px;
-    }
-  }
+  //   @include mx.mq("lg") {
+  //     font-size: 48px;
+  //   }
+  // }
 }
 .box {
   @include mx.column-fs-cr(20px);
@@ -49,7 +50,7 @@
   // }
 
   img {
-    width: 300px;
+    width: 200px;
     height: auto;
 
     // @include mx.mq("md") {

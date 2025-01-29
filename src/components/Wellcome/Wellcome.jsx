@@ -4,7 +4,7 @@ import cl from "./wellcome.module.scss";
 export default function Wellcome() {
   return (
     <div className={cl.wellcome}>
-      <h1>Ласкаво просимо</h1>
+      {/* <h1>Ласкаво просимо</h1> */}
       <div className={cl.box}>
         <img src={gb} alt="Goblin" />
         <div className={cl.info}>

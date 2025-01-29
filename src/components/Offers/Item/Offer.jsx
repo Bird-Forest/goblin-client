@@ -64,8 +64,9 @@ export default function Offer({ item }) {
             isReviews &&
             createPortal(
               <Overlay
-                closeModal={closeRead}
-                content={<GetReviews reviews={item.reviews} />}
+                content={
+                  <GetReviews reviews={item.reviews} closeModal={closeRead} />
+                }
               />,
               document.body
             )}
@@ -78,8 +79,7 @@ export default function Offer({ item }) {
           {isAdd &&
             createPortal(
               <Overlay
-                closeModal={closeAdd}
-                content={<CreateReview item={item} />}
+                content={<CreateReview item={item} closeModal={closeAdd} />}
               />,
               document.body
             )}

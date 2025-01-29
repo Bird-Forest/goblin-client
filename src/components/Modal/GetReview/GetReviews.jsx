@@ -2,10 +2,14 @@ import React from "react";
 import cl from "./get.module.scss";
 // import reviews from "./reviews.json";
 import { FaStar, FaRegStar } from "react-icons/fa";
+import { FaXmark } from "react-icons/fa6";
 
-export default function GetReviews({ reviews }) {
+export default function GetReviews({ reviews, closeModal }) {
   return (
-    <>
+    <div className={cl.wrapContent}>
+      <button className={cl.close} onClick={closeModal}>
+        <FaXmark />
+      </button>
       <ul className={cl.wrapReviews}>
         {reviews.map((el, i) => (
           <li key={i} className={cl.boxReview}>
@@ -28,6 +32,6 @@ export default function GetReviews({ reviews }) {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }

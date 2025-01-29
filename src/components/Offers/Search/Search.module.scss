@@ -9,8 +9,12 @@
   width: 100%;
   p {
     @extend %shantell-text;
+    font-size: 20px;
     color: v.$card;
     text-align: center;
+    @include mx.mq("md") {
+      font-size: 24px;
+    }
   }
 
   @include mx.mq("md") {
@@ -33,17 +37,21 @@
     width: inherit;
   }
 
-  button {
+  .wrapBtn {
     position: absolute;
     right: 0;
-    display: inline-flex;
-    align-items: center;
-    width: 48px;
-    height: 48px;
-    .icon {
-      fill: v.$brend;
-      width: 28px;
-      height: 28px;
+    @include mx.row-fs-cr(0);
+
+    button {
+      display: inline-flex;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      .icon {
+        fill: v.$brend;
+        width: 28px;
+        height: 28px;
+      }
     }
   }
 }

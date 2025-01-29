@@ -5,12 +5,13 @@ import { FaXmark } from "react-icons/fa6";
 export default function Overlay({ closeModal, content }) {
   return (
     <div className={cl.overlay}>
-      <div className={cl.wrapContent}>
-        <button className={cl.btnClose} onClick={closeModal}>
-          <FaXmark />
-        </button>
-        <div className={cl.content}>{content}</div>
-      </div>
+      {/* <div className={cl.wrapContent}> */}
+      {/* <button className={cl.btnClose} onClick={closeModal}>
+        <FaXmark />
+      </button> */}
+      {content}
+      {/* <div className={cl.content}>{content}</div> */}
+      {/* </div> */}
     </div>
   );
 }

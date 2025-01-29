@@ -1,0 +1,69 @@
+@use "../../scss/variables" as v;
+@use "../../scss/functions" as fn;
+@use "../../scss/mixins" as mx;
+@use "../../scss/placeholders";
+
+// .form {
+//   @include mx.column-fs-fs(4px);
+//   width: 300px;
+//   .btn {
+//     @include mx.btn-card(300px);
+//   }
+//   padding: 40px 0;
+// }
+
+.wrapInput {
+  @include mx.column-fs-fs(4px);
+  width: inherit;
+  // flex-shrink: 1;
+
+  .label {
+    @include mx.row-fs-cr(2px);
+    @extend %small-text;
+    span {
+      color: #fc5a5a;
+    }
+  }
+
+  .fieldIt {
+    @include mx.input(40px);
+    width: inherit;
+  }
+
+  .fieldTa {
+    @include mx.input(120px);
+    width: inherit;
+    resize: vertical;
+  }
+
+  .error {
+    @include mx.row-fs-cr(0);
+    height: 16px;
+    @extend %details-small;
+    color: #fc5a5a;
+  }
+}
+
+.caseStars {
+  @include mx.row-fs-fs(8px);
+  li {
+    @include mx.row-cr-cr(0);
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    .box {
+      position: absolute;
+      // appearance: none;
+      width: 20px;
+      height: 20px;
+      border: none;
+      padding: 0;
+    }
+    .star {
+      width: 20px;
+      height: 20px;
+      fill: v.$accent;
+    }
+  }
+}
