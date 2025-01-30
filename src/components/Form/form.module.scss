@@ -18,9 +18,10 @@
 
   .label {
     @include mx.row-fs-cr(2px);
-    @extend %small-text;
+    @extend %details-small;
+    color: v.$card;
     span {
-      color: #fc5a5a;
+      color: #ef5350;
     }
   }
 
@@ -39,7 +40,8 @@
     @include mx.row-fs-cr(0);
     height: 16px;
     @extend %details-small;
-    color: #fc5a5a;
+    // color: #ef5350;
+    color: v.$accent;
   }
 }
 

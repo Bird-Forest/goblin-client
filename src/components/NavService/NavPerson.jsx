@@ -1,7 +1,7 @@
 import React from "react";
 import { categoryPerson } from "../../constants/category-person";
 import { NavLink } from "react-router";
-import cl from "./navigate.module.scss";
+import cl from "./navservice.module.scss";
 
 export default function NavPerson() {
   return (

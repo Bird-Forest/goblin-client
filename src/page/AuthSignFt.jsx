@@ -4,8 +4,8 @@ import React from "react";
 
 export default function AuthSignFt() {
   return (
-    <div>
+    <>
       <SignForget />
-    </div>
+    </>
   );
 }

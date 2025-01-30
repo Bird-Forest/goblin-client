@@ -2,26 +2,17 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import cl from "./signin.module.scss";
+import cl from "./forget.module.scss";
 import Input from "../Form/Input";
-import { Link, redirect } from "react-router";
 
 const schema = yup
   .object({
-    user: yup
-      .string()
-      .min(3, "мінімум три символи")
-      .trim()
-      .required("поле обов'язкове"),
-    pwd: yup
-      .string()
-      .min(10, "мінімум 10 символів")
-      .trim()
-      .required("поле обов'язкове"),
+    passphrase: yup.string().trim().required("поле обов'язкове"),
+    answer: yup.string().trim().required("поле обов'язкове"),
   })
   .required();
 
-export default function FormSignIn() {
+export default function NewPassword() {
   const {
     register,
     handleSubmit,
@@ -35,20 +26,19 @@ export default function FormSignIn() {
     <form
       onSubmit={handleSubmit((data) => {
         console.log(data);
-        return redirect("/master");
       })}
-      className={cl.formIn}
+      className={cl.formFt}
     >
       <Input
-        label="Ім’я або назва компанії"
-        name="user"
+        label="Кодова фраза для перевірки"
+        name="passphrase"
         placeholder="..."
         register={register}
         errors={errors}
       />
       <Input
-        label="Пароль 10 символів"
-        name="pwd"
+        label="Відповідь, яку знаєте тільки Ви"
+        name="answer"
         placeholder="..."
         register={register}
         errors={errors}

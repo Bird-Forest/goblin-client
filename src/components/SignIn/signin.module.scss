@@ -4,12 +4,12 @@
 @use "../../scss/placeholders";
 
 .formIn {
-  @include mx.column-fs-fs(4px);
-  width: 300px;
-  .btn {
-    @include mx.btn-card(300px);
-  }
-  padding: 40px 0;
+  @include mx.column-fs-fs(8px);
+  min-width: 300px;
+  max-width: 440px;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
 }
 
 .btnWrap {

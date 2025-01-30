@@ -1,7 +1,6 @@
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router";
 import EmptyPage from "../components/Helper/EmptyPage";
-import NewPassword from "../components/SignFt/NewPassword";
 
 const Layout = lazy(() => import("../page/AppLayout"));
 const Main = lazy(() => import("../page/HomePage"));
@@ -13,6 +12,7 @@ const Auth = lazy(() => import("../page/AuthLayout"));
 const SignIn = lazy(() => import("../page/AuthSignIn"));
 const SignUp = lazy(() => import("../page/AuthSignUp"));
 const SignFt = lazy(() => import("../page/AuthSignFt"));
+const Verify = lazy(() => import("../components/SignFt/Verification"));
 const SignPwd = lazy(() => import("../components/SignFt/NewPassword"));
 const Error = lazy(() => import("../page/NotFound"));
 
@@ -33,7 +33,9 @@ const AppRouter = () => {
             <Route index element={<EmptyPage />} />
             <Route path="signin" element={<SignIn />} />
             <Route path="signup" element={<SignUp />} />
-            <Route path="forget" element={<SignFt />}>
+            <Route path="forget">
+              <Route index element={<SignFt />} />
+              <Route path="verify" element={<Verify />} />
               <Route path="password" element={<SignPwd />} />
             </Route>
           </Route>

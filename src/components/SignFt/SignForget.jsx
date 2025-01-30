@@ -12,12 +12,12 @@ const schema = yup
       .string()
       .min(3, "мінімум три символи")
       .trim()
-      .required("поле обовязкове"),
+      .required("поле обов'язкове"),
     tel: yup
       .string()
       .matches(/^0\d{9}$/, "перша цифра 0, разом 10 цифр")
       .trim()
-      .required("поле обовязкове"),
+      .required("поле обов'язкове"),
   })
   .required();
 
@@ -32,7 +32,7 @@ export default function SignForget() {
     resolver: yupResolver(schema),
   });
   return (
-    <div>
+    <>
       <form
         onSubmit={handleSubmit((data) => {
           console.log(data);
@@ -60,7 +60,12 @@ export default function SignForget() {
           </button>
         </div>
       </form>
-      <Link to="/auth/forget/password">New pass</Link>
-    </div>
+      <Link to="/auth/forget/verify" viewTransition>
+        Verification
+      </Link>
+      <Link to="/auth/forget/password" viewTransition>
+        New pass
+      </Link>
+    </>
   );
 }

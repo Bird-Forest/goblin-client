@@ -4,22 +4,37 @@
 @use "../../scss/placeholders";
 
 .wrapAuth {
-  @include mx.row-cr-cr(20px);
+  @include mx.column-cr-cr(20px);
   .link {
-    @extend %accent-text;
-    height: 24px;
+    @include mx.column-cr-cr(0);
+    width: 240px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid v.$card;
+    // @extend %accent-text;
+    @extend %shantell-text;
+    font-size: 20px;
 
     color: v.$card;
     transition: color 0.2s linear;
 
     &:hover {
       color: v.$accent;
+      border: 1px solid v.$accent;
     }
 
     &.active {
       font-weight: 700;
       color: v.$accent;
       text-decoration: underline;
+      border: 1px solid v.$accent;
+    }
+  }
+
+  @include mx.mq("md") {
+    @include mx.row-cr-cr(8px);
+    .link {
+      width: 200px;
     }
   }
 }

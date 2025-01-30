@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import NavPerson from "./NavPerson";
-import cl from "./navigate.module.scss";
-import NavHome from "./NavHome";
+import cl from "./navservice.module.scss";
 import { FaXmark, FaEllipsisVertical } from "react-icons/fa6";
+import { categoryPerson } from "../../constants/category-person";
+import { categoryHome } from "../../constants/category-home";
 import NavEmpty from "./NavEmpty";
+import NavCategory from "./NavCategory";
 
 export default function NavigateService() {
   const [page, setPage] = useState("");
@@ -52,8 +53,10 @@ export default function NavigateService() {
           </label>
         </fieldset>
 
-        {page === "person" && <NavPerson />}
-        {page === "home" && <NavHome />}
+        {page === "person" && (
+          <NavCategory page={page} category={categoryPerson} />
+        )}
+        {page === "home" && <NavCategory page={page} category={categoryHome} />}
         {!page && <NavEmpty />}
       </div>
     </>

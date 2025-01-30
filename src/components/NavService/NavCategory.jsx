@@ -1,14 +1,13 @@
 import React from "react";
-import { categoryHome } from "../../constants/category-home";
 import { NavLink } from "react-router";
 import cl from "./navservice.module.scss";
 
-export default function NavHome() {
+export default function NavCategory({ page, category }) {
   return (
     <ul className={cl.listLink}>
-      {categoryHome.map((item, i) => (
+      {category.map((item, i) => (
         <li key={i} className={cl.wrapLink}>
-          <NavLink to={`home/${item.path}`}>
+          <NavLink to={`${page}/${item.path}`}>
             {({ isActive }) => (
               <span
                 className={isActive ? `${cl.link} ${cl.active}` : `${cl.link}`}
