@@ -1,0 +1,48 @@
+@use "../../scss/variables" as v;
+@use "../../scss/functions" as fn;
+@use "../../scss/mixins" as mx;
+@use "../../scss/placeholders";
+
+.wrapForm {
+  position: relative;
+  @include mx.column-fs-fs(16px);
+  min-width: 300px;
+  max-width: 440px;
+  width: 100%;
+  height: auto;
+
+  background-color: v.$card;
+  border-radius: 4px;
+  padding: 40px 10px;
+
+  @include mx.mq("md") {
+    padding: 40px;
+  }
+  .close {
+    @include mx.btn-close(16px, 12px);
+  }
+}
+
+.btnWrap {
+  @include mx.row-cr-cr(0);
+  width: 100%;
+  height: fit-content;
+  margin-top: 10px;
+
+  button {
+    @include mx.btn-card(240px);
+    height: 48px;
+  }
+}
+
+.case {
+  @include mx.column-fs-fs(4px);
+  max-width: 400px;
+  p {
+    @include mx.row-fs-cr(2px);
+    @extend %small-text;
+    span {
+      color: #fc5a5a;
+    }
+  }
+}

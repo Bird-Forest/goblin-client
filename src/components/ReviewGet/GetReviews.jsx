@@ -1,6 +1,5 @@
 import React from "react";
 import cl from "./get.module.scss";
-// import reviews from "./reviews.json";
 import { FaStar, FaRegStar } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 

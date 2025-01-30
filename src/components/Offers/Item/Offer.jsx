@@ -4,9 +4,9 @@ import { FaStar, FaRegStar } from "react-icons/fa";
 import SocialNetworks from "./SocialNetworks";
 import Overlay from "../../Overlay/Overlay";
 import Notice from "../../Notif/Notice";
-import GetReviews from "../../Modal/GetReview/GetReviews";
+import GetReviews from "../../ReviewGet/GetReviews";
 import { createPortal } from "react-dom";
-import CreateReview from "../../Modal/AddReview/CreateReview";
+import CreateReview from "../../ReviewAdd/CreateReview";
 
 export default function Offer({ item }) {
   const [isRead, setIsRead] = useState(false);

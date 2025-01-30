@@ -1,0 +1,25 @@
+@use "../../scss/variables" as v;
+@use "../../scss/functions" as fn;
+@use "../../scss/mixins" as mx;
+@use "../../scss/placeholders";
+
+.wrapAuth {
+  @include mx.row-cr-cr(20px);
+  .link {
+    @extend %accent-text;
+    height: 24px;
+
+    color: v.$card;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: v.$accent;
+    }
+
+    &.active {
+      font-weight: 700;
+      color: v.$accent;
+      text-decoration: underline;
+    }
+  }
+}

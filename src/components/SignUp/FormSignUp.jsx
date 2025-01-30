@@ -2,8 +2,8 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import cl from "./form.module.scss";
-import Input from "./Input";
+import cl from "./signup.module.scss";
+import Input from "../Form/Input";
 
 const schema = yup
   .object({
@@ -15,7 +15,6 @@ const schema = yup
     tel: yup
       .string()
       .matches(/^0\d{9}$/, "перша цифра 0, разом 10 цифр")
-      //   .length(10, "перша цифра 0, разом 10 цифр")
       .trim()
       .required("поле обовязкове"),
     pwd: yup
@@ -28,11 +27,11 @@ const schema = yup
   })
   .required();
 
-export default function FormAuth() {
+export default function FormSignUp() {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitting },
     watch,
     reset,
   } = useForm({
@@ -48,10 +47,10 @@ export default function FormAuth() {
         onSubmit={handleSubmit((data) => {
           console.log(data);
         })}
-        className={cl.form}
+        className={cl.formUp}
       >
         <Input
-          label="Ваше ім’я"
+          label="Ім’я або назва компанії"
           name="user"
           placeholder="..."
           register={register}
@@ -86,7 +85,11 @@ export default function FormAuth() {
           errors={errors}
         />
 
-        <input type="submit" value="Зареєструватись" className={cl.btn} />
+        <div className={cl.btnWrap}>
+          <button type="submit" className={cl.btn}>
+            {isSubmitting ? "Чекаємо" : "Відправити"}
+          </button>
+        </div>
       </form>
     </div>
   );

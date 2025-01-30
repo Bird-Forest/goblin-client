@@ -15,7 +15,6 @@
 .wrapInput {
   @include mx.column-fs-fs(4px);
   width: inherit;
-  // flex-shrink: 1;
 
   .label {
     @include mx.row-fs-cr(2px);

@@ -116,3 +116,14 @@
     }
   }
 }
+
+.auth {
+  @include mx.column-fs-cr(16px);
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+
+  @include mx.mq("md") {
+    padding: 40px 20px;
+  }
+}

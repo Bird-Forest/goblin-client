@@ -1,10 +1,10 @@
-@use "../../../scss/variables" as v;
-@use "../../../scss/functions" as fn;
-@use "../../../scss/mixins" as mx;
-@use "../../../scss/placeholders";
+@use "../../scss/variables" as v;
+@use "../../scss/functions" as fn;
+@use "../../scss/mixins" as mx;
+@use "../../scss/placeholders";
 
 .wrapContent {
-  position: relative;
+  position: fixed;
   @include mx.column-fs-cr(0);
   max-width: 900px;
   max-height: 80vh;
@@ -12,9 +12,6 @@
   background-color: v.$card;
   border-radius: 4px;
   padding: 40px 10px;
-
-  overflow: auto;
-  @include mx.scroll-bar;
 
   @include mx.mq("md") {
     padding: 40px;
@@ -28,8 +25,8 @@
     @include mx.column-fs-cr(8px);
 
     width: 100%;
-    // padding: 40px 0;
-    // padding-right: 8px;
+    overflow: auto;
+    @include mx.scroll-bar;
   }
 }
 
